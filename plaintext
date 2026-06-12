@@ -1,0 +1,11 @@
+meu_projeto_discord/
+├── .env                 # Configurações sensíveis
+├── main.py              # Ponto de entrada (inicia tudo)
+├── models/
+│   ├── note.py          # A classe Note e o ColorEnum
+├── services/
+│   ├── note_service.py  # Lógica de criação de notas (from_file, from_console)
+│   ├── webhook_client.py# Lógica exclusiva de comunicação com Discord (requests)
+│   └── config_manager.py# Lógica de leitura do .env
+└── controllers/
+    └── bot_controller.py# O "maestro" que conecta o serviço ao disparo
